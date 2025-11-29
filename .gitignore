@@ -1,0 +1,10 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Testing
+test.html
+
+# IDEs
+.vscode/
+.idea/

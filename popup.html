@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UUCMS Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>UUCMS Calculator</h1>
+        <div class="status-badge" id="status">Ready</div>
+      </header>
+
+      <main>
+        <div class="stats-grid">
+          <div class="stat-card total">
+            <span class="label">Total Marks</span>
+            <span class="value" id="totalMarks">--</span>
+            <span class="sub-label" id="maxMarks">/ --</span>
+          </div>
+
+          <div class="stat-card average">
+            <span class="label">Average</span>
+            <span class="value" id="averageMarks">--</span>
+          </div>
+
+          <div class="stat-card percentage">
+            <span class="label">Percentage</span>
+            <span class="value" id="percentage">--%</span>
+          </div>
+        </div>
+
+        <button id="calcBtn" class="primary-btn">
+          <span class="btn-text">Calculate</span>
+          <div class="btn-glow"></div>
+        </button>
+
+        <div id="errorMsg" class="error-message" style="display: none;">
+          <p>It will work in <span id="uucmsLink" class="link">UUCMS</span> website</p>
+        </div>
+      </main>
+
+      <footer>
+      <p>Developed by <span id="authorLink" style="cursor: pointer; text-decoration: underline;">Manu N M</span></p>
+    </footer>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
